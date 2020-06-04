@@ -1,0 +1,6 @@
+/home/lincolnaraujo/Documents/git-pocs/git-demo-dynamodb/src/main/java/br/com/demodynamodb/demodynamodb/controller/HomeController.java
+/home/lincolnaraujo/Documents/git-pocs/git-demo-dynamodb/src/main/java/br/com/demodynamodb/demodynamodb/model/ProductInfo.java
+/home/lincolnaraujo/Documents/git-pocs/git-demo-dynamodb/src/main/java/br/com/demodynamodb/demodynamodb/service/ProductInfoService.java
+/home/lincolnaraujo/Documents/git-pocs/git-demo-dynamodb/src/main/java/br/com/demodynamodb/demodynamodb/configuration/DynamoDBConfig.java
+/home/lincolnaraujo/Documents/git-pocs/git-demo-dynamodb/src/main/java/br/com/demodynamodb/demodynamodb/repository/ProductInfoRepository.java
+/home/lincolnaraujo/Documents/git-pocs/git-demo-dynamodb/src/main/java/br/com/demodynamodb/demodynamodb/DemoDynamodbApplication.java

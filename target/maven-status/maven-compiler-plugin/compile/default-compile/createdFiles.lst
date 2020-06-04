@@ -1,0 +1,6 @@
+br/com/demodynamodb/demodynamodb/configuration/DynamoDBConfig.class
+br/com/demodynamodb/demodynamodb/controller/HomeController.class
+br/com/demodynamodb/demodynamodb/service/ProductInfoService.class
+br/com/demodynamodb/demodynamodb/DemoDynamodbApplication.class
+br/com/demodynamodb/demodynamodb/model/ProductInfo.class
+br/com/demodynamodb/demodynamodb/repository/ProductInfoRepository.class
