@@ -29,4 +29,5 @@ public class HomeController {
     public ProductInfo newProduct(@RequestBody ProductInfo product){
         return service.save(product);
     }
+
 }
