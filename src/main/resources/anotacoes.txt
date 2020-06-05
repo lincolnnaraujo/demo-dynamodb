@@ -1,5 +1,21 @@
 -- Comando para subir o Dynamo no DOcker:
+
+Banco na memória
 docker run -p 8000:8000 amazon/dynamodb-local -jar DynamoDBLocal.jar -inMemory -sharedDb
+
+Banco em arquivo
+docker run -p 8000:8000 -v $(pwd)/local/dynamodb:/data/ amazon/dynamodb-local -jar DynamoDBLocal.jar -sharedDb -dbPath /data
+
+-- Abrir no navegador:
+http://localhost:8000/shell/
 
 -- Criar a tabela:
 aws dynamodb create-table     --table-name ProductInfo     --attribute-definitions         AttributeName=id,AttributeType=S         AttributeName=description,AttributeType=S     --key-schema         AttributeName=id,KeyType=HASH         AttributeName=description,KeyType=RANGE --provisioned-throughput         ReadCapacityUnits=10,WriteCapacityUnits=5 --endpoint-url http://localhost:8000/
+
+-- Listar Tabelas
+aws dynamodb list-tables --endpoint-url http://localhost:8000/
+
+-- Novo item (coluna) na tabela
+aws dynamodb put-item --table-name ProductInfo \
+--item AttributeName=cost,AttributeType=S \
+--endpoint-url http://localhost:8000

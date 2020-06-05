@@ -22,6 +22,12 @@ public class HomeController {
     @ResponseBody
     @GetMapping("/list")
     public Iterable<ProductInfo> list(){
+
+        ProductInfo product = new ProductInfo();
+        product.setCost("1");
+        product.setDescription("Teste");
+
+        service.save(product);
         return service.listAllProducts();
     }
 
